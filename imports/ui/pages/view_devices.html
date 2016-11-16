@@ -1,0 +1,103 @@
+<template name="view_devices">
+  <div class="container"><center>
+    <div class="row">
+      {{#if lightHelper}}
+            <div class="col s12 m6">
+              <div class="card blue lighten-2">
+                <div class="card-image">
+                  <i class="large material-icons">wb_incandescent</i>
+                </div>
+                <span class="card-title"><b>Lights</b></span>
+                <div class="card-content">
+                  <p>From here control all the power to lights synced with your iHome system <br><br></p>
+                </div>
+                <div class="card-action">
+                  <a href="/lights"><b class= "lights-link white-text">Access light settings</b></a>
+                </div>
+              </div>
+            </div>
+        {{/if}}
+        {{#if garageHelper}}
+            <div class="col s12 m6">
+              <div class="card blue lighten-2">
+                <div class="card-image">
+                  <i class="large material-icons">directions_car</i>
+                </div>
+                <span class="card-title"><b>Garage</b></span>
+                <div class="card-content">
+                  <p>From here control all the garage functions synced with your iHome system<br><br></p>
+                </div>
+                <div class="card-action">
+                  <a href="/garage"><b class= "white-text">Access garage settings</b></a>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+            {{#if petHelper}}
+            <div class="col s12 m6">
+              <div class="card blue lighten-2">
+                <div class="card-image">
+                  <i class="large material-icons">pets</i>
+                </div>
+                <span class="card-title"><b>Pet Bowls</b></span>
+                <div class="card-content">
+                  <p>From here view all the information on your pet's bowls synced with your iHome system</p>
+                </div>
+                <div class="card-action">
+                  <a href="/pet"><b class= "white-text">Access pet bowl information</b></a>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+            {{#if doorHelper}}
+            <div class="col s12 m6">
+              <div class="card blue lighten-2">
+                <div class="card-image">
+                  <i class="large material-icons">lock_outliine</i>
+                </div>
+                <span class="card-title"><b>Doors</b></span>
+                <div class="card-content">
+                  <p>From here control all the functions connected to doors synced with your iHome system</p>
+                </div>
+                <div class="card-action">
+                  <a href="/doors"><b class= "white-text">Access door settings</b></a>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+            {{#if windowHelper}}
+            <div class="col s12 m6">
+              <div class="card blue lighten-2">
+                <div class="card-image">
+                  <i class="large material-icons">border_all</i>
+                </div>
+                <span class="card-title"><b>Windows</b></span>
+                <div class="card-content">
+                  <p>From here control all the functions connected to windows synced with your iHome system</p>
+                </div>
+                <div class="card-action">
+                  <a href="/windows"><b class= "white-text">Access window settings</b></a>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+            {{#if audioHelper}}
+            <div class="col s12 m6">
+              <div class="card blue lighten-2">
+                <div class="card-image">
+                  <i class="large material-icons">queue_music</i>
+                </div>
+                <span class="card-title"><b>Audio System</b></span>
+                <div class="card-content">
+                  <p>From here control all the functions connected to audio systems synced with your iHome system</p>
+                </div>
+                <div class="card-action">
+                  <a href="/audio"><b class= "white-text">Access audio settings</b></a>
+                </div>
+              </div>
+            </div>
+            {{/if}}
+          </div>
+  </center>
+</div>
+</Template>
